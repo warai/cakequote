@@ -7,3 +7,375 @@ Request URL: /cakequote/index
 Stack Trace:
 #0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-20 15:58:50 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 16]
+2013-02-20 15:58:50 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 16, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 16, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 15:59:09 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 16]
+2013-02-20 15:59:09 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 16, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 16, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 15:59:43 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 16]
+2013-02-20 15:59:43 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 16, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 16, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:05:28 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 21]
+2013-02-20 16:05:28 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:05:44 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 21]
+2013-02-20 16:05:44 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:06:17 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/add/user
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 16:06:22 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/add/users
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 16:10:44 Error: [MissingActionException] Action UsersController::loginout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'loginout',
+)
+Request URL: /cakequote/users/loginout
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:16:45 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 48]
+2013-02-20 16:16:45 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 48, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 48, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:40:00 Error: [MissingActionException] Action GroupsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'view',
+)
+Request URL: /cakequote/groups/view/2
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:40:04 Error: [MissingActionException] Action GroupsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'view',
+)
+Request URL: /cakequote/groups/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:53:11 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 16:53:11 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:55:46 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 16:55:46 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:55:47 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 16:55:47 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:58:56 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 16:58:56 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:58:57 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 16:58:57 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:58:57 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 16:58:57 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:03:27 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:03:27 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:04:29 Error: [MissingControllerException] Controller class GController could not be found.
+Exception Attributes: array (
+  'class' => 'GController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/g
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 17:04:29 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:04:29 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/g
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:04:32 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:04:32 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:14:07 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:14:07 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:14:08 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:14:08 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:14:18 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:14:18 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:14:19 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:14:19 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:14:44 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:14:44 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:14:46 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:14:46 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:15:23 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [C:\wamp\www\cakequote\app\Controller\AppController.php, line 41]
+2013-02-20 17:15:23 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:30:56 Error: [MissingActionException] Action GroupsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'view',
+)
+Request URL: /cakequote/groups/view/2
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 20:28:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/css/main.css
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/js/script.js
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/js/script.js
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/js/script.js
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/css/main.css
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/js/script.js
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/js/script.js
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/css/main.css
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 20:28:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/js/script.js
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

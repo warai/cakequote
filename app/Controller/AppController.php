@@ -32,9 +32,38 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	public $theme = 'bootstrap';
+	public $components = array(
+		'Session',
+		'Auth' => array(
+		'loginRedirect' => array('controller' => 'quotes', 'action' => 'index'),
+		'logoutRedirect' => array('controller' => 'quotes', 'action' => 'index'),
+		'authorize' => array('Controller')
+			)
+	);
+
 	function beforeFilter() {
-		if (isset($this->params['prefix']) && $this->params['prefix'] == 'admin') {
-			$this->layout = 'admin';
-		} 
+	if (isset($this->params['prefix']) && $this->params['prefix'] == 'admin') {
+		$this->layout = 'admin';
+	}
+
+	$this->Auth->allow('index', 'view');
+
+	if($this->Auth->loggedIn()){;
+		$this->set('me',$this->Auth->user());
+		}
+		else{
+			$this->set('me',array('id'=>0,'username'=>'not connected'));
+		}
+	}
+
+	public function isAuthorized($user){
+
+		if(isset($user['group_id']) && $user['group_id']==1){
+			return true;
+		}
+
+		return false;
 	}
 }
+

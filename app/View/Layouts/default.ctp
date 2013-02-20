@@ -41,6 +41,14 @@
 		</div>
 		<div id="content">
 
+			<?php echo $me['username']; ?>
+
+			<?php if ($me['id']>0): ?>
+				<div><?php echo $this->Html->link('logout', '/users/logout'); ?></div>
+			<?php else: ?>
+				<div><?php echo $this->Html->link('login', '/users/login'); ?></div>
+			<?php endif; ?>
+
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
