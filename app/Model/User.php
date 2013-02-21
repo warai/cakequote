@@ -8,7 +8,7 @@ App::uses('AuthComponent', 'Controller/Component');
  * @property Quote $Quote
  */
 class User extends AppModel {
-	
+
 
 /**
  * Display field
@@ -55,10 +55,12 @@ class User extends AppModel {
 			'counterQuery' => ''
 		)
 	);
-public function beforeSave($options = array()) {
+
+	public function beforeSave($options = array()) {
     if (isset($this->data[$this->alias]['password'])) {
         $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
     }
     return true;
 }
+
 }

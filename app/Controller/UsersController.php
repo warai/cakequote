@@ -5,7 +5,6 @@ App::uses('AppController', 'Controller');
  *
  * @property User $User
  */
-
 class UsersController extends AppController {
 
 	public function beforeFilter(){
@@ -14,49 +13,42 @@ class UsersController extends AppController {
 	}
 
 	public function isAuthorized($user){
-
-		if($this->action == 'login' || $this->action == 'logout'){
+		
+		//if ($this->action== 'login' ||$this->action == 'logout') {
+		if (in_array($this->action,array('login','logout'))) {
 			return true;
-		}		
+		}
 
-		if($this->action == 'edit'){
+		if ($this->action == 'edit') {
 			$user_id = $this->request->params['pass'][0];
 			$me_id = $this->Auth->user('id');
-			if($me_id = $user_id){
+			if ($me_id == $user_id) {
 				return true;
-			}
-			else{
+			}else{
 				$this->Session->setFlash('try harder');
 			}
-		
 		}
 
-		if($this->action=='delete'){
+		if ($this->action== 'delete') {	
 			return false;
 		}
-
-		if($this->action=='add'){
-			return true;
-		}
-
 		return parent::isAuthorized($user);
 	}
 
-	public function login(){		 
-    	if ($this->request->is('post')) {
-       		if ($this->Auth->login()) {
-           		$this->redirect($this->Auth->redirect());
 
+	public function login() {
+	    if ($this->request->is('post')) {
+	        if ($this->Auth->login()) {
+	            return $this->redirect($this->Auth->redirect());
 	        } else {
-	            $this->Session->setFlash('Invalid username or password, try again');
+	            $this->Session->setFlash(__('Invalid username or password, try again'));
 	        }
 	    }
 	}
-	
 
-	public function logout(){
+	public function logout() {
 		$this->Session->setFlash('Bye bye');
-		$this->redirect($this->Auth->logout());
+	    $this->redirect($this->Auth->logout());
 	}
 
 /**

@@ -16,10 +16,10 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Group'), array('action' => 'edit', $group['Group']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Group'), array('action' => 'delete', $group['Group']['id']), null, __('Are you sure you want to delete # %s?', $group['Group']['id'])); ?> </li>
+		
+		
 		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add')); ?> </li>
+		
 		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
@@ -31,7 +31,7 @@
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Username'); ?></th>
-		<th><?php echo __('Password'); ?></th>
+		
 		<th><?php echo __('Email'); ?></th>
 		<th><?php echo __('Group Id'); ?></th>
 		<th><?php echo __('Created'); ?></th>
@@ -44,7 +44,7 @@
 		<tr>
 			<td><?php echo $user['id']; ?></td>
 			<td><?php echo $user['username']; ?></td>
-			<td><?php echo $user['password']; ?></td>
+			
 			<td><?php echo $user['email']; ?></td>
 			<td><?php echo $user['group_id']; ?></td>
 			<td><?php echo $user['created']; ?></td>

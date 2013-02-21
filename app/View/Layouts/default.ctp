@@ -32,6 +32,7 @@
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+
 	?>
 </head>
 <body>
@@ -40,14 +41,15 @@
 			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
 		</div>
 		<div id="content">
+			<h2>
+				<?php echo $me['username']; ?>
 
-			<?php echo $me['username']; ?>
-
-			<?php if ($me['id']>0): ?>
-				<div><?php echo $this->Html->link('logout', '/users/logout'); ?></div>
-			<?php else: ?>
-				<div><?php echo $this->Html->link('login', '/users/login'); ?></div>
-			<?php endif; ?>
+				<?php if ($me['id']>0): ?>
+					<div><?php echo $this->Html->link('logout', '/users/logout'); ?></div>
+				<?php else: ?>
+					<div><?php echo $this->Html->link('login', '/users/login'); ?></div>
+				<?php endif; ?>
+			</h2>
 
 			<?php echo $this->Session->flash(); ?>
 
@@ -57,6 +59,6 @@
 			coded with love
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	
 </body>
 </html>

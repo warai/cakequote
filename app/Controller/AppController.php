@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $theme = 'bootstrap';
+	//public $theme = 'bootstrap';
 	public $components = array(
 		'Session',
 		'Auth' => array(
@@ -43,17 +43,19 @@ class AppController extends Controller {
 	);
 
 	function beforeFilter() {
-	if (isset($this->params['prefix']) && $this->params['prefix'] == 'admin') {
+	if (isset($this->request->params['prefix']) && $this->request->params['prefix'] == 'admin') {
 		$this->layout = 'admin';
 	}
 
-	$this->Auth->allow('index', 'view');
-
+	$this->Auth->loginAction = array('controller'=>'users','action'=>'login','admin'=>false);
+	if(!isset($this->request->params['prefix'])){
+	$this->Auth->allow('index','view');
+	}
 	if($this->Auth->loggedIn()){;
 		$this->set('me',$this->Auth->user());
 		}
 		else{
-			$this->set('me',array('id'=>0,'username'=>'not connected'));
+			$this->set('me',array('username'=>'visitor','id'=>0));
 		}
 	}
 
