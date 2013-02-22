@@ -24,10 +24,13 @@
 	<title>
 		<?php echo $title_for_layout; ?>
 	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="<?php echo $this->Html->url('/css/bootstrap.css'); ?>">
+	
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		//echo $this->Html->css('cake.generic');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -36,22 +39,21 @@
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
+	
+	<div class="container">
+		<div class="navbar-inner">
+		<div id="header" class="span9">
+			
+			<?php echo $this->element('menu/top_menu'); ?>
+			
 		</div>
+	</div>
 		<div id="content">
-			<h2>
-				<?php echo $me['username']; ?>
-
-				<?php if ($me['id']>0): ?>
-					<div><?php echo $this->Html->link('logout', '/users/logout'); ?></div>
-				<?php else: ?>
-					<div><?php echo $this->Html->link('login', '/users/login'); ?></div>
-				<?php endif; ?>
-			</h2>
+			
+			
 
 			<?php echo $this->Session->flash(); ?>
+
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
@@ -61,4 +63,7 @@
 	</div>
 	
 </body>
+<script src="http://code.jquery.com/jquery.js"></script>
+    <?php echo $this->Html->script('bootstrap'); ?>
+    <?php echo $scripts_for_layout;?>
 </html>

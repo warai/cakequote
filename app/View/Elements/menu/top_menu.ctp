@@ -14,14 +14,7 @@
 					</a>
 					<ul class="dropdown-menu">
 						
-<?php if (Configure::read('debug') > 0): ?>
-<li>
-<?php echo $this->Html->link(
-	'id_user: '.$me['id'].' id_tourist: '.$me['Tourist']['id'],
-	array('controller'=>'users','action' => 'view',$me['id'] ));
-?>
-</li>
-<?php endif; ?>
+
 						<li>
 							<?php echo $this->Html->link('Profile', array('controller'=>'users','action' => 'view/ '.$me['id'] )); ?>
 						</li>
@@ -34,6 +27,7 @@
 					</ul>
 				</li>
 				<?php else: ?>
+
 					<li><?php echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login')); ?></li>
 					<li class="divider-vertical"></li>
 					<li><?php echo $this->Html->link('Signup', array('controller' => 'users', 'action' => 'add')); ?></li>
@@ -45,15 +39,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<?php echo $this->Html->link('caketrek', array('controller'=>'pages','action'=>'home'), array('class'=>'brand')); ?>
+			<?php echo $this->Html->link('Cakequote', '/', array('class'=>'brand')); ?>
 			<div class="nav-collapse">
 				<ul class="nav">
 					<li <?php if($current_page=="pages"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('PagesController', array('controller' => 'pages', 'action' => 'index')); ?>
+						<?php echo $this->Html->link('Groupes', array('controller' => 'groups', 'action' => 'index')); ?>
 					</li>
 					<li <?php if($current_page=="users"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('UsersController', array('controller' => 'users', 'action' => 'index')); ?>
+						<?php echo $this->Html->link('Membres', array('controller' => 'users', 'action' => 'index')); ?>
 					</li>
+					<li <?php if($current_page=="admin"){echo'class="active"';} ?>>
+						<?php echo $this->Html->link('Admin', array('controller' => 'admin', 'action' => 'users')); ?>
+					</li>
+					<li><?php echo $this->Html->link(__('New Quote'), array('action' => 'add')); ?></li>
 					
 				</ul>
 			</div>
