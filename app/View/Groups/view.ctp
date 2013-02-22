@@ -1,33 +1,19 @@
 <div class="groups view">
-<h2><?php  echo __('Group'); ?></h2>
+<h2><?php  echo __('Groupe'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		
+		<dt><?php echo __('Nom'); ?></dt>
 		<dd>
-			<?php echo h($group['Group']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Name'); ?></dt>
-		<dd>
-			<?php echo h($group['Group']['name']); ?>
+			<em><?php echo h($group['Group']['name']); ?></em>
 			&nbsp;
 		</dd>
 	</dl>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		
-		
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index')); ?> </li>
-		
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+
 <div class="related">
-	<h3><?php echo __('Related Users'); ?></h3>
+	<h3><?php echo __('Utilisateurs appartenant à ce groupe'); ?></h3>
 	<?php if (!empty($group['User'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
+	<table cellpadding = "0" cellspacing = "0" class="table">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Username'); ?></th>
@@ -50,18 +36,13 @@
 			<td><?php echo $user['created']; ?></td>
 			<td><?php echo $user['updated']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'users', 'action' => 'view', $user['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'users', 'action' => 'edit', $user['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'users', 'action' => 'delete', $user['id']), null, __('Are you sure you want to delete # %s?', $user['id'])); ?>
+				<div class="btn btn-info"><?php echo $this->Html->link(__('View'), array('controller' => 'users', 'action' => 'view', $user['id'])); ?></div>
+				
 			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
+	
 </div>

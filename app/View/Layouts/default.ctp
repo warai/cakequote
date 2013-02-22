@@ -25,17 +25,13 @@
 		<?php echo $title_for_layout; ?>
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="screen" href="<?php echo $this->Html->url('/css/bootstrap.css'); ?>">
-	
+		
 	<?php
 		echo $this->Html->meta('icon');
-
-		//echo $this->Html->css('cake.generic');
-
+		echo $this->Html->css('bootstrap.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-
 	?>
 </head>
 <body>
@@ -58,7 +54,7 @@
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			coded with love
+			Jean-Edouard Sastre<br/> IIM A2 Web
 		</div>
 	</div>
 	

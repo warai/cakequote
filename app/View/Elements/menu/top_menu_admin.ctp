@@ -39,25 +39,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<?php echo $this->Html->link('Jap Life', '/', array('class'=>'brand')); ?>
+			<?php echo $this->Html->link('Administration', '', array('class'=>'brand')); ?>
 			<div class="nav-collapse">
 				<ul class="nav">
 					<li <?php if($current_page=="accueil"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('Accueil', '/'); ?>
+						<?php echo $this->Html->link('Retour au site', '/'); ?>
 					</li>
-					<li <?php if($current_page=="quotes"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('Coutumes', array('controller' => 'quotes', 'action' => 'index')); ?>
-					</li>
-					<li <?php if($current_page=="users"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('Membres', array('controller' => 'users', 'action' => 'index')); ?>
-					</li>
+					<li><?php echo $this->Html->link("Utilisateurs",array('action'=>'index','controller'=>'users')); ?></li>
+					<li><?php echo $this->Html->link("Coutumes",array('action'=>'index','controller'=>'quotes')); ?></li>
 					
-					<li><?php echo $this->Html->link(__('Ajouter une coutume'), array('action' => 'add')); ?></li>
+					<li><?php echo $this->Html->link("Groupes",array('action'=>'index','controller'=>'groups')); ?></li>
 
-
-					<li <?php if($current_page=="admin"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('Administration', array('controller' => 'admin', 'action' => 'users')); ?>
-					</li>
+					
+					
 				</ul>
 			</div>
 		</div>

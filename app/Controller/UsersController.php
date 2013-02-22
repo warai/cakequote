@@ -25,7 +25,7 @@ class UsersController extends AppController {
 			if ($me_id == $user_id) {
 				return true;
 			}else{
-				$this->Session->setFlash('try harder');
+				$this->Session->setFlash("Vous n'avez pas la permission de faire cette action");
 			}
 		}
 
