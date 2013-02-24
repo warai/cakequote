@@ -22,6 +22,9 @@
 							<?php echo $this->Html->link('Edit', array('controller'=>'users','action' => 'edit/ '.$me['id'] )); ?>
 						</li>
 						<li>
+							<?php echo $this->Html->link('Delete', array('controller'=>'users','action' => 'delete/ '.$me['id'] )); ?>
+						</li>
+						<li>
 							<?php echo $this->Html->link('Logout', array('controller'=>'users','action' => 'logout' )); ?>
 						</li>
 					</ul>
@@ -39,21 +42,25 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<?php echo $this->Html->link('Jap Life', '/', array('class'=>'brand')); ?>
+			<?php echo $this->Html->link('World Customs', '/', array('class'=>'brand')); ?>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<li <?php if($current_page=="accueil"){echo'class="active"';} ?>>
-						<?php echo $this->Html->link('Accueil', '/'); ?>
-					</li>
+					
 					<li <?php if($current_page=="quotes"){echo'class="active"';} ?>>
 						<?php echo $this->Html->link('Coutumes', array('controller' => 'quotes', 'action' => 'index')); ?>
 					</li>
+					
+					<li <?php if($current_page=="countries"){echo'class="active"';} ?>>
+						<?php echo $this->Html->link('Pays', array('controller' => 'countries', 'action' => 'index')); ?>
+					</li>
+					
+					<li <?php if($current_page=="quotes"){echo'class="active"';} ?>>
+						<?php echo $this->Html->link('Ajouter une coutume', array('controller' => 'quotes', 'action' => 'add')); ?>
+					</li>
+
 					<li <?php if($current_page=="users"){echo'class="active"';} ?>>
 						<?php echo $this->Html->link('Membres', array('controller' => 'users', 'action' => 'index')); ?>
 					</li>
-					
-					<li><?php echo $this->Html->link(__('Ajouter une coutume'), array('action' => 'add')); ?></li>
-
 
 					<li <?php if($current_page=="admin"){echo'class="active"';} ?>>
 						<?php echo $this->Html->link('Administration', array('controller' => 'admin', 'action' => 'users')); ?>

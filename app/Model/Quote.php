@@ -29,9 +29,16 @@ class Quote extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		),
+		'Country' => array(
+			'className' => 'Country',
+			'foreignKey' => 'country_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+			)
 	);
-
+	
 
 	public function isOwnedBy($quote_id,$user_id){
 

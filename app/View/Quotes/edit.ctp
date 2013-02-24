@@ -11,6 +11,7 @@
 				echo $this->Form->input('id');
 				echo $this->Form->input('title');
 				echo $this->Form->input('body');
+				echo $this->Form->input('country_id');
 			
 			?>
 			</fieldset>

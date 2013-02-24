@@ -5,6 +5,7 @@
 				<h3><?php echo __('Actions'); ?></h3>
 				<ul>
 					<li><?php echo $this->Html->link(__('New Quote'), array('action' => 'add')); ?></li>
+					<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>
 					<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 					<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 				</ul>
@@ -19,6 +20,7 @@
 					<th><?php echo $this->Paginator->sort('title'); ?></th>
 					<th><?php echo $this->Paginator->sort('body'); ?></th>
 					<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+					<th><?php echo $this->Paginator->sort('country_id'); ?></th>
 					<th><?php echo $this->Paginator->sort('created'); ?></th>
 					<th><?php echo $this->Paginator->sort('updated'); ?></th>
 					<th class="actions"><?php echo __('Actions'); ?></th>
@@ -30,6 +32,9 @@
 				<td><?php echo h($quote['Quote']['body']); ?>&nbsp;</td>
 				<td>
 					<?php echo $this->Html->link($quote['User']['username'], array('controller' => 'users', 'action' => 'view', $quote['User']['id'])); ?>
+				</td>
+				<td>
+				<?php echo $this->Html->link($quote['Country']['name'], array('controller' => 'countries', 'action' => 'view', $quote['Country']['id'])); ?>
 				</td>
 				<td><?php echo h($quote['Quote']['created']); ?>&nbsp;</td>
 				<td><?php echo h($quote['Quote']['updated']); ?>&nbsp;</td>

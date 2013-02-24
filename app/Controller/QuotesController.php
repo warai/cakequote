@@ -74,6 +74,9 @@ class QuotesController extends AppController {
 		}
 		$users = $this->Quote->User->find('list');
 		$this->set(compact('users'));
+
+		$countries = $this->Quote->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**
@@ -100,6 +103,9 @@ class QuotesController extends AppController {
 		}
 		$users = $this->Quote->User->find('list');
 		$this->set(compact('users'));
+
+		$countries = $this->Quote->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**
@@ -166,6 +172,9 @@ class QuotesController extends AppController {
 		}
 		$users = $this->Quote->User->find('list');
 		$this->set(compact('users'));
+
+		$countries = $this->Quote->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**
@@ -192,6 +201,9 @@ class QuotesController extends AppController {
 		}
 		$users = $this->Quote->User->find('list');
 		$this->set(compact('users'));
+
+		$countries = $this->Quote->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**

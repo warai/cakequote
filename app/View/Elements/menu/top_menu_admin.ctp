@@ -47,7 +47,9 @@
 					</li>
 					<li><?php echo $this->Html->link("Utilisateurs",array('action'=>'index','controller'=>'users')); ?></li>
 					<li><?php echo $this->Html->link("Coutumes",array('action'=>'index','controller'=>'quotes')); ?></li>
-					
+					<li <?php if($current_page=="countries"){echo'class="active"';} ?>>
+						<?php echo $this->Html->link('Pays', array('controller' => 'countries', 'action' => 'index')); ?>
+					</li>
 					<li><?php echo $this->Html->link("Groupes",array('action'=>'index','controller'=>'groups')); ?></li>
 
 					

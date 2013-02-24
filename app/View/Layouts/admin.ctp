@@ -31,6 +31,7 @@
 		</div>
 		<div id="footer">
 			Jean-Edouard Sastre<br/> IIM A2 Web
+			<?php echo $this->element('sql_dump'); ?>
 		</div>
 	</div>
 	

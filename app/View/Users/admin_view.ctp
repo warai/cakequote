@@ -66,6 +66,7 @@
 				<th><?php echo __('Title'); ?></th>
 				<th><?php echo __('Body'); ?></th>
 				<th><?php echo __('User Id'); ?></th>
+				<th><?php echo __('Country Id'); ?></th>
 				<th><?php echo __('Created'); ?></th>
 				<th><?php echo __('Updated'); ?></th>
 				<th class="actions"><?php echo __('Actions'); ?></th>
@@ -78,6 +79,7 @@
 					<td><?php echo $quote['title']; ?></td>
 					<td><?php echo $quote['body']; ?></td>
 					<td><?php echo $quote['user_id']; ?></td>
+					<td><?php echo $quote['country_id']; ?></td>
 					<td><?php echo $quote['created']; ?></td>
 					<td><?php echo $quote['updated']; ?></td>
 					<td class="actions">

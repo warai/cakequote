@@ -5704,3 +5704,439 @@ Request URL: /cakequote/admin
 Stack Trace:
 #0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-23 21:44:23 Error: [MissingControllerException] Controller class GoupsController could not be found.
+Exception Attributes: array (
+  'class' => 'GoupsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/goups
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-24 12:06:54 Error: Fatal Error (64): Cannot redeclare Quote::$belongsTo in [C:\wamp\www\cakequote\app\Model\Quote.php, line 43]
+2013-02-24 12:06:54 Error: [FatalErrorException] Cannot redeclare Quote::$belongsTo
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 43)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 43, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 43, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 12:07:29 Error: Fatal Error (64): Cannot redeclare class Group in [C:\wamp\www\cakequote\app\Model\Country.php, line 41]
+2013-02-24 12:07:29 Error: [FatalErrorException] Cannot redeclare class Group
+Request URL: /cakequote/countries
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 12:07:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Quote.country_id' in 'field list'
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1342): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1204): DboSource->fetchAssociated(Object(Country), 'SELECT `Quote`....', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1115): DboSource->queryAssociation(Object(Country), Object(Quote), 'hasMany', 'Quote', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Country), Array)
+#7 C:\wamp\www\cakequote\app\Controller\CountriesController.php(32): Model->find('first', Array)
+#8 [internal function]: CountriesController->view('1')
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CountriesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CountriesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 12:08:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Quote.country_id' in 'field list'
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1342): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1204): DboSource->fetchAssociated(Object(Country), 'SELECT `Quote`....', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1115): DboSource->queryAssociation(Object(Country), Object(Quote), 'hasMany', 'Quote', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Country), Array)
+#7 C:\wamp\www\cakequote\app\Controller\CountriesController.php(32): Model->find('first', Array)
+#8 [internal function]: CountriesController->view('1')
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CountriesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CountriesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 12:20:24 Error: Fatal Error (64): Cannot redeclare Quote::$belongsTo in [C:\wamp\www\cakequote\app\Model\Quote.php, line 43]
+2013-02-24 12:20:24 Error: [FatalErrorException] Cannot redeclare Quote::$belongsTo
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 43)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 43, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 43, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 12:32:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.quote_id' in 'on clause'
+Request URL: /cakequote/quotes/view/9
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\app\Controller\QuotesController.php(55): Model->find('first', Array)
+#6 [internal function]: QuotesController->view('9')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-24 12:33:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.quote_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:11:00 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 75]
+2013-02-24 14:11:00 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakequote/quotes/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 75, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 75, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 14:11:34 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 75]
+2013-02-24 14:11:34 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakequote/quotes/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 75, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 75, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 14:11:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 75]
+2013-02-24 14:11:36 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakequote/quotes/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 75, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 75, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 14:21:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.quote_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:21:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.quote_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:22:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.country_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:23:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.country_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:30:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.country_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:30:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.country_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:32:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.country_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 14:33:03 Error: [MissingTableException] Table profiles for model Profile was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'profiles',
+  'class' => 'Profile',
+  'ds' => 'default',
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('profiles')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1066): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#4 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#6 [internal function]: QuotesController->index()
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-24 14:34:56 Error: [MissingTableException] Table profiles for model Country was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'profiles',
+  'class' => 'Country',
+  'ds' => 'default',
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('profiles')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1066): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#4 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#5 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#6 [internal function]: QuotesController->index()
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-24 14:36:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Country.quote_id' in 'on clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(40): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-24 15:38:21 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakequote/countries/delete/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\CountriesController.php(89): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: CountriesController->delete('1')
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CountriesController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CountriesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-24 17:31:55 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 9]
+2013-02-24 17:31:55 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 17:33:06 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 9]
+2013-02-24 17:33:06 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 17:33:14 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 9]
+2013-02-24 17:33:14 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 17:33:26 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 9]
+2013-02-24 17:33:26 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 17:34:13 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 9]
+2013-02-24 17:34:13 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 17:38:32 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 9]
+2013-02-24 17:38:32 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 9, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 17:42:17 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [C:\wamp\www\cakequote\app\View\Countries\view.ctp, line 3]
+2013-02-24 17:42:17 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+Request URL: /cakequote/countries/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 3, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 3, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 18:12:03 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 95]
+2013-02-24 18:12:03 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 95, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 95, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 18:30:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 94]
+2013-02-24 18:30:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 94)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\cak...', 94, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\cak...', 94, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 18:40:52 Error: Fatal Error (4): syntax error, unexpected '>' in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 95]
+2013-02-24 18:40:52 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 95, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 95, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-24 18:40:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Group.' in 'field list'
+Request URL: /cakequote/users/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Group`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Group`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Group`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Group), Array)
+#5 C:\wamp\www\cakequote\app\Controller\UsersController.php(96): Model->find('list', Array)
+#6 [internal function]: UsersController->add()
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
