@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Lun 25 Février 2013 à 13:18
+-- Généré le : Lun 25 Février 2013 à 13:26
 -- Version du serveur: 5.5.8
 -- Version de PHP: 5.3.5
 
@@ -115,11 +115,11 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` char(50) NOT NULL,
   `password` char(50) DEFAULT NULL,
   `email` char(200) NOT NULL,
-  `group_id` int(10) unsigned NOT NULL,
+  `group_id` int(10) unsigned NOT NULL DEFAULT '3',
   `created` datetime DEFAULT NULL,
   `updated` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
 --
 -- Contenu de la table `users`
